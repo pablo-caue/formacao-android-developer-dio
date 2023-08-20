@@ -1,6 +1,6 @@
 package introducao
 
-class MutableStack<E>(vararg items: E) {              // 1
+class MutableStackk<E>(vararg items: E) {              // 1
 
     private val elements = items.toMutableList()
 
@@ -17,11 +17,11 @@ class MutableStack<E>(vararg items: E) {              // 1
     override fun toString() = "MutableStack(${elements.joinToString()})"
 }
 
-fun <E> mutableStackOf(vararg elements: E) = MutableStack(*elements)
+fun <E> mutableStackOf(vararg elements: E) = MutableStackk(*elements)
 
 fun main() {
-    val stack = mutableStackOf(0.62, 3.14, 2.7)
-    stack.push(9.87)
+    val stack = mutableStackOf("A", "B", "C")
+    stack.push("9.87")
     println(stack)
 
     for (i in 1..stack.size()){
